@@ -82,6 +82,7 @@ function getNewBookmark(){
 
 }
 
+// Next we create the function formVaidation.
 function formValidation(websiteName, websiteUrl){
   if(!websiteName || !websiteUrl){
     alert('Please fill in the form!');
