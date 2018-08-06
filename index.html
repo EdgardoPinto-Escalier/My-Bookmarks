@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Bookmarks</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+<body onload="getNewBookmark()">
+  <section class="hero is-info">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-centered">
+            MY BOOKMARKS
+          </h1>
+          <h2 class="subtitle has-text-centered">
+            SIMPLE BOOKMARKER APPLICATION MADE WITH VANILLA JS
+          </h2>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="hero">
+          <div class="hero-body">
+            <form id="bookmarksForm">
+              <div class="field">
+                <label class="label is-large">SITE NAME</label>
+                <div class="control has-icons-left">
+                  <input class="input is-large" type="text" id="websiteName" placeholder="Enter website name here">
+                  <span class="icon is-left">
+                    <i class="fas fa-map-marker-alt fa-lg"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                  <label class="label is-large">SITE URL</label>
+                  <div class="control has-icons-left">
+                    <input class="input is-large" type="text" id="websiteUrl" placeholder="Enter website url here">
+                    <span class="icon is-left">
+                      <i class="fas fas fa-globe-americas fa-lg"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="button is-medium is-info"><i class="fab fa-telegram-plane fa-lg"></i>&nbsp; SUBMIT</button>
+                </div>
+            </form>
+          </div>
+        </section>
+
+        <div class="row">
+          <div class="colum is-12">
+            <div id="bookmarkResults" class="notification is-white">
+              
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <script src="main.js"></script>
+</body>
+</html>
